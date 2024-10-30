@@ -1,3 +1,3 @@
 # The Wild Oasis
 
-Main project in Jonas Schemdtmann's react course.
+Main project in Jonas Schemdtmann's react course done with react.
