@@ -12,8 +12,6 @@ export function useUser() {
     queryFn: getCurrentUser,
   });
 
-  if (!user) return {};
-
   return {
     isLoading,
     user,

@@ -16,9 +16,14 @@ function ProtectedRoute({ children }) {
   const navigate = useNavigate();
 
   const { isLoading, isAuthenticated, isFetching } = useUser();
-
+  console.log("loading:" + isLoading);
+  console.log("auth:" + isAuthenticated);
+  console.log("fetch:" + isFetching);
   useEffect(
     function () {
+      console.log("loading:" + isLoading);
+      console.log("auth:" + isAuthenticated);
+      console.log("fetch:" + isFetching);
       if (!isAuthenticated && !isLoading && !isFetching) navigate("login");
     },
     [isAuthenticated, isLoading, navigate, isFetching]

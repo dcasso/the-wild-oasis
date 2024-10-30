@@ -12,6 +12,7 @@ export async function signupFromBackend({ fullName, email, password }) {
       },
     },
   });
+
   if (savedSessionData) {
     // Restore the session in local storage
     localStorage.setItem(
